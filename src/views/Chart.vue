@@ -13,7 +13,7 @@
     @Component
     export default class Chart extends Vue {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        chartPie: any
+        $echarts: any
 
         data() {
             return {
@@ -39,8 +39,8 @@
                 offset: [30, 40],
                 textStyle: mytextStyle
             }
-            this.chartPie = echarts.init(document.getElementById('chartPie'), 'macarons')
-            this.chartPie.setOption({
+            let chartPie = this.$echarts.init(document.getElementById('chartPie'), 'macarons')
+            chartPie.setOption({
 
                 title: {
                     text: '总消费:',

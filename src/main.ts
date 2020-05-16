@@ -30,7 +30,7 @@ window.onload = function () {
 if (document.documentElement.clientWidth > 500) {
     window.alert('请使用手机打开，以保证浏览效果')
     const img = document.createElement('img')
-    img.src = '/qrcode.png'
+    img.src = 'https://user-gold-cdn.xitu.io/2020/5/13/1720d99b435380e3?w=256&h=256&f=png&s=6624'
     img.style.position = 'fixed'
     img.style.top = '26%'
     img.style.left = '50%'
