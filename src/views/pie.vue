@@ -124,7 +124,7 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .noResult {
         padding: 16px;
         text-align: center;

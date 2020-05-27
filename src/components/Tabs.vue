@@ -53,19 +53,20 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            transform: translateY(10px);
+            transform: translate(0,10px);
             position: relative;
 
             &.selected::after { //选中后的效果
                 content: '';
                 position: absolute;
-                width: 4em;
-                height: 3px;
-                background: #333;
-                display: flex;
+                bottom: 0;
+                left: 0;
                 justify-content: center;
                 align-items: center;
-                transform: translateY(18px);
+                width: 4em;
+                height: 2px;
+                background: #333;
+                transform: translateX(13px)translateY(-10px);
             }
         }
     }
