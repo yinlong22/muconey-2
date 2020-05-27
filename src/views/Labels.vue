@@ -41,6 +41,8 @@
         background: white;
         font-size: 16px;
         padding-left: 16px;
+        height: 80vh;
+        overflow-y: scroll;
 
         > .tag {
             min-height: 46px;

@@ -69,10 +69,11 @@
 <style lang="scss" scoped>
     .tags {
         background: white;
-        flex-grow: 1;
+        height: 49vh;
         font-size: 16px;
         padding: 16px;
         display: flex;
+        overflow-y: scroll;
 
         > .current {
             overflow: scroll;

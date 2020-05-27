@@ -76,7 +76,7 @@ const store = new Vuex.Store({
                 store.commit('createTag', '红包')
                 store.commit('createTag', '工作')
                 store.commit('createTag', '投资')
-
+                store.commit('createTag', '学习')
             }
         },
         createTag(state, name: string) {
