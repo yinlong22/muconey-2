@@ -14,7 +14,7 @@
                 <div>Y</div>
             </div>
             <!--            <button @click="createTag">管理标签</button>-->
-            <router-link to="labels">---
+            <router-link to="labels">--
                 <div>管</div>
                 <div>理</div>
                 <div>标</div>
@@ -23,7 +23,8 @@
         </div>
         <ul class="current">
             <li v-for="tag in tagList" :key="tag.id"
-                :class="{selected: selectedTags.indexOf(tag)>=0}"
+                :class="{selected: selectedTags.indexOf(tag)>=0
+                &&selectedTags.indexOf(tag)<1}"
                 @click="toggle(tag)">
                  <span class="tmd" v-if="tag.name">
                     <Icon :name="tag.name"/>
@@ -55,7 +56,9 @@
             const index = this.selectedTags.indexOf(tag)
             if (index >= 0) {
                 this.selectedTags.splice(index, 1)
-            } else {
+            }
+            else{
+                this.selectedTags.splice(index, 1)
                 this.selectedTags.push(tag)//点击后执行这个函数，当选中后，tag会被push到selectedTags上
             }
             this.$emit('update:value', this.selectedTags)
@@ -92,7 +95,7 @@
                     align-items: center;
                     position: absolute;
                     font-size: 39px;
-                    transform: translate(-1px,-9px);
+                    transform: translate(-1px, -9px);
                 }
 
                 > .tmd2 {
