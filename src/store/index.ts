@@ -92,6 +92,17 @@ const store = new Vuex.Store({
         saveTags(state) {
             window.localStorage.setItem('tagList', JSON.stringify(state.tagList))
         },
+        initRecordList (state) {
+            const isLocal = window.localStorage.getItem('recordList')
+            if (!isLocal) {
+                window.localStorage.setItem(
+                    'recordList',
+                    JSON.stringify(state.recordList)
+                )
+            } else {
+                state.recordList = JSON.parse(isLocal)
+            }
+        },
     }
 })
 

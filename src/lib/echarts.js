@@ -42,14 +42,6 @@ export default {
         const lineChart = Echarts.init(document.getElementById(dom))
         lineChart.setOption({
             title: {},
-            // axisLabel:{
-            //        interval: 0,  //控制坐标轴刻度标签的显示间隔.设置成 0 强制显示所有标签。设置为 1，隔一个标签显示一个标签。设置为2，间隔2个标签。以此类推
-            //       rotate:45,//倾斜度 -90 至 90 默认为0
-            //       textStyle:{
-            //           fontWeight:"bold",  //加粗
-            //           color:"#000000"   //黑色
-            //       },
-            //   },
             tooltip: {
                 trigger: 'axis',
                 axisPointer: {
@@ -68,7 +60,7 @@ export default {
             yAxis: {
                 show: false
             },
-            series: [{ name: type==='pay'?'支出':'收入', data: data, type: 'line' }]
+            series: [{ name: type==='-'?'支出':'收入', data: data, type: 'line' }]
         })
     },
 

@@ -51,7 +51,6 @@
         created() {
             this.$store.commit('fetchTags')
         }
-
         toggle(tag: string) {
             const index = this.selectedTags.indexOf(tag)
             if (index >= 0) {
