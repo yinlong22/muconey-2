@@ -59,12 +59,12 @@
             &.selected::after { //选中后的效果
                 content: '';
                 position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 60%;
-                height: 2px;
+                justify-content: center;
+                align-items: center;
+                width: 3.99em;
+                height: 3px;
                 background: #333;
-                transform: translateX(16px)translateY(-10px);
+                transform: translateY(18px);
             }
         }
     }
