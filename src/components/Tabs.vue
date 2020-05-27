@@ -46,6 +46,7 @@
         align-items: center;
         justify-content: center;
         color: #333;
+        position: relative;
 
         &-item { //异己选择器 优先级较低
             width: 26%;
@@ -58,15 +59,13 @@
 
             &.selected::after { //选中后的效果
                 content: '';
+                display: flex;
                 position: absolute;
-                bottom: 0;
-                left: 0;
-                justify-content: center;
-                align-items: center;
-                width: 4em;
-                height: 2px;
+                width: 3em;
+                height: 0.1em;
                 background: #333;
-                transform: translateX(13px)translateY(-10px);
+                top: 80%;
+                left: 23%;
             }
         }
     }

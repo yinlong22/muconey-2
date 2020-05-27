@@ -104,19 +104,6 @@
         text-align: center;
     }
 
-    ::v-deep {
-        .type-tabs-item { //::v-deep或/deep/可以影响外部传到里面的组件
-            &.selected {
-                &::after {
-                    width: 4em;
-                    height: 2px;
-                    background: #333;
-                    transform: translateX(12px) translateY(-10px);
-                }
-            }
-        }
-    }
-
     %item {
         padding: 8px 16px;
         line-height: 25px;
