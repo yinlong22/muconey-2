@@ -59,11 +59,12 @@
             &.selected::after { //选中后的效果
                 content: '';
                 position: absolute;
-                justify-content: center;
-                align-items: center;
-                width: 3.99em;
+                width: 4em;
                 height: 3px;
                 background: #333;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 transform: translateY(18px);
             }
         }
