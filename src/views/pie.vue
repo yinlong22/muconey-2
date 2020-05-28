@@ -87,6 +87,8 @@
                             {value: this.getList('红包'), name: '红包', label: {show: true}, labelLine: {show: true}},
                             {value: this.getList('工作'), name: '工作', label: {show: true}, labelLine: {show: true}},
                             {value: this.getList('投资'), name: '投资', label: {show: true}, labelLine: {show: true}},
+                            {value: this.getList('学习'), name: '学习', label: {show: true}, labelLine: {show: true}},
+
                         ],
                         animationEasing: 'cubicInOut',
                         animationDuration: 2600,
