@@ -1,8 +1,9 @@
 <template>
-        <div v-if="recordList.length>0">
-            <span class="title">消费习惯：</span>
-        <div id="chartPie" class="pie-wrap"></div></div>
-        <div v-else class="noResult">目前还没有相关记录</div>
+    <div v-if="recordList.length>0">
+        <span class="title">消费习惯：</span>
+        <div id="chartPie" class="pie-wrap"></div>
+    </div>
+    <div v-else class="noResult">目前还没有相关记录</div>
 </template>
 <script lang="ts">
     import Vue from 'vue'
@@ -108,8 +109,9 @@
         }
 
         getList(dataName: string) {
-            if (this.recordList.filter(i=>i.type==="-").filter(t => t.tags[0].name === dataName).map(i => i.amount).reduce((sum, n) => sum + n, 0) !== 0){
-                return this.recordList.filter(i=>i.type==="-").filter(t => t.tags[0].name === dataName).map(i => i.amount).reduce((sum, n) => sum + n, 0)}else{
+            if (this.recordList.filter(i => i.type === '-').filter(t => t.tags[0].name === dataName).map(i => i.amount).reduce((sum, n) => sum + n, 0) !== 0) {
+                return this.recordList.filter(i => i.type === '-').filter(t => t.tags[0].name === dataName).map(i => i.amount).reduce((sum, n) => sum + n, 0)
+            } else {
                 console.log(dataName)
             }
         }
@@ -133,7 +135,8 @@
         padding: 16px;
         text-align: center;
     }
-    .title{
+
+    .title {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -141,9 +144,10 @@
         font-size: 20px;
         transform: translateY(20px);
     }
+
     .pie-wrap {
-        transform: translateY(-50px);
+        transform: translateY(-60px);
         width: 100%;
-        height: 400px;
+        height: 380px;
     }
 </style>

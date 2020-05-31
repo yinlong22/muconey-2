@@ -1,5 +1,5 @@
 <template>
-    <Layout>
+    <Layout class="all">
         <Tabs class-prefix="type" :data-source="recordTypeList" :value.sync="type"/>
         <ol v-if="groupedList.length>0">
             <li v-for="(group,index) in groupedList" :key="index">
@@ -99,6 +99,9 @@
 </script>
 
 <style scoped lang="scss">
+    .all{
+        height: 100vh;
+    }
     .noResult {
         padding: 16px;
         text-align: center;

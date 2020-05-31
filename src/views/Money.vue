@@ -1,5 +1,5 @@
 <template>
-    <Layout class-prefix="layout">
+    <Layout class-prefix="layout" id="all">
         <NumberPad :value.sync="record.amount" @submit="saveRecord"/>
         <div class="notes">
             <Icon class="notes-svg" name="备注"/>
@@ -63,9 +63,12 @@
 
 <style lang="scss">
     //空格.是tags里面的，没有.是当前tags
+    #all{
+        height: 100vh;
+    }
     .layout-content {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column-reverse
     }
 
     .notes {
