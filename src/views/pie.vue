@@ -108,8 +108,10 @@
         }
 
         getList(dataName: string) {
-            if (this.recordList.filter(i=>i.type==="-").filter(t => t.tags[0].name === dataName).map(i => i.amount).reduce((sum, n) => sum + n, 0) !== 0)
-                return this.recordList.filter(i=>i.type==="-").filter(t => t.tags[0].name === dataName).map(i => i.amount).reduce((sum, n) => sum + n, 0)
+            if (this.recordList.filter(i=>i.type==="-").filter(t => t.tags[0].name === dataName).map(i => i.amount).reduce((sum, n) => sum + n, 0) !== 0){
+                return this.recordList.filter(i=>i.type==="-").filter(t => t.tags[0].name === dataName).map(i => i.amount).reduce((sum, n) => sum + n, 0)}else{
+                console.log(dataName)
+            }
         }
 
         beforeCreate() {
