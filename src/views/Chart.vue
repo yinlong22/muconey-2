@@ -1,5 +1,5 @@
 <template>
-    <Layout class="all">
+    <Layout>
         <div class="top-bar">
             <div class="type">
                 <span :class="{active:type==='-'}" @click="changeType('-')">支出</span>
@@ -314,9 +314,6 @@
 
 <style lang="scss" scoped>
     $base-color: rgb(255, 218, 71);
-    .all{
-        height: 100vh;
-    }
     .class-wrapper {
         font-size: 14px;
         padding: 10px 0 3px 35px;

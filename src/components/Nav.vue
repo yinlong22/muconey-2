@@ -29,6 +29,7 @@ nav {
     font-size: 12px;
 
     > .item {
+        height: 52px;
         padding: 2px 0;
         width: 33.3333333%;
         display: flex;

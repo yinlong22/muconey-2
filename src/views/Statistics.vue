@@ -100,7 +100,7 @@
 
 <style scoped lang="scss">
     .all{
-        height: 100vh;
+
     }
     .noResult {
         padding: 16px;
