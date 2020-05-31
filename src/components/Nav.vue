@@ -9,7 +9,6 @@
         <router-link to="/chart" class="item" active-class="selected">图表
             <Icon name="chart"/>
         </router-link>
-
     </nav>
 </template>
 
@@ -29,7 +28,7 @@ nav {
     font-size: 12px;
 
     > .item {
-        height: 52px;
+        height: 50px;
         padding: 2px 0;
         width: 33.3333333%;
         display: flex;

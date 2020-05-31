@@ -64,7 +64,7 @@
                 width: 3em;
                 height: 0.1em;
                 background: #333;
-                top: 80%;
+                top: 76%;
                 left: 23%;
             }
         }
