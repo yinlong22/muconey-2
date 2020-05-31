@@ -142,11 +142,11 @@
         align-items: center;
         color: chocolate;
         font-size: 20px;
-        transform: translateY(20px);
+        transform: translateY(12px);
     }
 
     .pie-wrap {
-        transform: translateY(-60px);
+        transform: translateY(-70px);
         width: 100%;
         height: 380px;
     }
